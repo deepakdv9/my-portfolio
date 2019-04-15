@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+nav {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
+    min-height: 65px;
+    text-align: right;
+    background-color: rgb(63, 63, 63, 0.9);
+    margin-bottom: 0px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 90vw;
+    list-style: none;
+    z-index: 100px;
+}
+nav ul a {
+    text-decoration: none;
+    color: #f23e3e;
+    font-weight: 800;
+    opacity: 2;
+}
+ul li {
+    margin-right: 60px;
+}
+.main-doc {
+    width: 100%;
+}
+/* .show-all {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto 90px;
+    background: #e0ebe8;
+    color: #008080;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid #90C695;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top: 10px;} */
+    .nav-colored { background-color:#000; }
+    .nav-transparent { background-color:transparent;}
+#welcome-section {
+    font-family: Orbitron, sans-serif;
+    display:block;
+    text-align: center;
+    height: 60vh;
+    padding: 30vh;
+    background-color: #BFDBF4;
+    color: #fff;
+    font-size: 30px;
+    background-image: url("https://arielle.com.au/wp-content/uploads/2016/04/desktop-coffee-MPB-dark-2-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#welcome-section a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+#primary{
+    text-align: center;
+    padding-top: 100px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+.flex-1 {
+    width: 35%;
+    margin-left: 50px;
+}
+.flex-2 {
+    width: 65%;
+    text-align: left;
+    font-size: 18px;
+}
+#primary p {
+    max-width: 670px;
+    margin: 0 auto;
+}
+#projects {
+    background-color: #9d999d;
+    background-size: cover;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+#projects h2 {
+    padding-top: 50px;
+}
+#projects img {
+    height: 180px;
+    width: 100%;
+}
+
+.project-tile {
+    height: 220px;
+    width: 280px;
+    display: inline-block;
+    margin: 40px 100px;
+    color: #fff;
+}
+#projects a {
+    text-decoration: none;
+    color: #fff;
+}
+#contact {
+    color: #f23e3e;
+    text-align: center;
+    padding-bottom: 145px;
+    background-color: #333333;
+}
+#contact a {
+    color: #f23e3e;
+}
+.contact {
+  margin: 50px 60px;
+}
+.contact-details {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.btn-primary {
+    text-align: center;
+}
+button {
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    color: #f23e3e;
+    background-color: #333333;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+button:hover{
+    /* background-color: red; */
+}
+#profile-link i {
+    margin-bottom: 30px;
+    color: #BC6F2B;
+}
+footer {
+    background: #7c787c;
+    text-align: center;
+    height: 170px;
+    color: #ffff;
+    font-size: 20px;
+    line-height: 4px;
+}
+footer h4 {
+    padding-top: 64px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: ropa sans, serif;
+}
+footer p {
+    padding-top: 15px;
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover{
+    color: red;
+}
+@media (max-width: 650px){
+    footer {
+        height: 280px;
+    }
+}

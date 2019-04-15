@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="survey-form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <h1 id="title">Hospital Survey Form<h1>
+    <div id="survey-page">
+        <form id="survey-form" method="get" action="https://mail.google.com/mail/u/1/#inbox/FMfcgxwBVWRXNrNvQcbzNcrFKwvQbxWQ">
+            <p id="description">Patient Intake</p>
+            <div class="row">
+                <div class="label">
+                <label id="name-label" for="name"> Name:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label id="email-label" for="email">Email:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required pattern="[a-z]{1,20}@[a-z]{1,8}.[a-z]{1,3}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label id="number-label" for="age">Age:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="problems">Which one of these are you suffering from?</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="problems" class="dropdown">
+                        <option value="Fever">Fever</option>
+                        <option value="Cold">Cold</option>
+                        <option value="Stomach Ache">Stomach Ache</option>
+                        <option value="Headache">Headache</option>
+                        <option value="Emergency">Emergency</option>
+                        <option value="Ulcer">Ulcer</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="appoinment">When do you need an appoinment?</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul style="list-style: none;">
+                            <li class="radio">
+                                <label for="today"><input id="today" name="appoinment" type="radio" value="1" checked>Today</label></li>
+                            <li class="radio">
+                                <label for="tomorrow"><input id="tomorrow" name="appoinment" type="radio" value="2">Tomorrow</label></li>
+                            <li class="radio">
+                                <label for="next week"><input id="next week" name="appoinment" type="radio" value="3">Next Week</label></li>
+                            <li class="radio">
+                                <label for="next month"><input id="next month" name="appoinment" type="radio" value="4">Next Month</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="likings">What do you like about our staff?</label>
+                    </div>
+                    <div class="rightTab">
+                        <li class="checkbox"><label for="Dedicated"><input class="loving" value="5" type="checkbox" name="personality"> Dedicated</label></li>
+                        <li class="checkbox"><label for="Knowladgeble & Skilled"><input class="loving" value="4" type="checkbox" name="personality"> Knowladgeble & Skilled</label></li>
+                        <li class="checkbox"><label for="Kind & Polite"><input class="loving" value="3" type="checkbox" name="personality"> Kind & Polite</label></li>
+                        <li class="checkbox"><label for="Professional"><input class="loving" value="2" type="checkbox" name="personality"> Professional</label></li>
+                        <li class="checkbox"><label for="Helpful & Caring"><input class="loving" value="1" type="checkbox" name="personality"> Helpful & Caring</label></li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="likings">What do you like about this hospital?</label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="likings" class="dropdown">
+                            <option value="service">Service</option>
+                            <option value="caring">Caring</option>
+                            <option value="on time service">On time service</option>
+                        </select>
+                    </div>
+                    <div class="label">
+                        <label for="comments">Any comments or suggestions?</label>
+                    </div>
+                    <div class="rightTab">
+                        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</body>
+</html>
